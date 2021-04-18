@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cards-ie.css">
+  <link rel="stylesheet" href="cards-ie9.css">
+  <link rel="stylesheet" href="cards.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>Blackjack</title>
+</head>
+
+<body>
+  <h1>Blackjack</h1>
+  <h4>av Anton Rydhammer</h4>
+
+  <p id="text-area">Välkommen till Blackjack!</p>
+  <button class="btn btn-dark" id="new-game-button">Nytt spel!</button>
+  <button class="btn btn-dark" id="hit-button">Hit!</button>
+  <button class="btn btn-dark" id="stay-button">Stay</button>
+  <button class="btn btn-dark debutton" onClick="deal(1)">Bet $1</button>
+  <button class="btn btn-dark debutton" onClick="deal(5)">Bet $5</button>
+  <button class="btn btn-dark debutton" onClick="deal(10)">Bet $10</button>
+  <button class="btn btn-dark debutton" onClick="deal(20)">Bet $20</button></br>
+  <div id="playermoney">$100</div>
+  <p>Information om speletsgång: </p>
+  <p> Spelets mål är att slå dealern med att inte gå över med 21 poäng.
+  </p>
+  <p> Klädda kort är värda 10, Ess är 1 eller 11</p>
+  <p> Lycka till!
+  </p>
+
+  <script src="spel.js"></script>
+</body>
+
+</html>
